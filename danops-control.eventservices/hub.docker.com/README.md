@@ -17,3 +17,6 @@ The value can be retrievd via public HTTPS as follows:
 echo "DOCKER_TAG_DEPLOYVERSION=`curl --silent https://raw.githubusercontent.com/danops-stack/danops-metadata/main/danops-control.eventservices/hub.docker.com/danops-control.eventservices-webapps--latest`"
 ```
 
+## Alternative
+
+Alternatively, the 'DOCKER_TAG_DEPLOYVERSION' could also be retrieved+calculated from the Docker repo, based on [Docker repo API](https://registry.hub.docker.com/v2/repositories/danopsstack/danops-hub-docker-com/tags?page_size=1024) queries by matching 'danops-control.eventservices-webapps--latest' tag to other 'danops-control.eventservices-webapps--xxx' tag(s) with the same digest.
