@@ -14,6 +14,6 @@ The content of this file will be automatically written by the CI during Docker i
 The value can be retrievd via public HTTPS as follows:
 
 ```bash
-echo "HOSTNAME=`curl --silent https://raw.githubusercontent.com/danops-stack/danops-metadata/main/danops-control.eventservices/hub.docker.com/danops-control.eventservices-webapps--latest`"
+echo "DOCKER_TAG_DEPLOYVERSION=`curl --silent https://raw.githubusercontent.com/danops-stack/danops-metadata/main/danops-control.eventservices/hub.docker.com/danops-control.eventservices-webapps--latest`"
 ```
 
